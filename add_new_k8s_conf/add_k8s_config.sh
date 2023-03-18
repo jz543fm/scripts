@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 cnf=$(realpath $1)
 echo "This script adds new K8s conf $config to ~/.kube/config"
 if [ -d "$HOME/.kube/bckp" ] 

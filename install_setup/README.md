@@ -1,6 +1,7 @@
 # Install Setup
 
 Creates installation setup for Debian/Ubuntu + adds binaries by specific version
+
 Install Starship (Cross Platform Terminal) by mine [repository](https://github.com/jz543fm/starship-conf) 
 
 Binaries list:

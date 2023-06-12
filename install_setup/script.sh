@@ -38,3 +38,8 @@ KUBENS_VERSION=0.9.4; curl -sSLO https://github.com/ahmetb/kubectx/releases/down
 
 KUBECTL_VERSION=1.27.2; curl -LO https://dl.k8s.io/release/v${KUBECTL_VERSION}/bin/linux/amd64/kubectl
 sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+
+# Install My repo w/ Starship
+git clone https://github.com/jz543fm/starship-conf.git
+curl -sS https://starship.rs/install.sh | sudo sh #Install Starship
+cd starship-conf/; chmod 750 install*; ./install_bash.sh; cd ../; rm -rf starship-conf;

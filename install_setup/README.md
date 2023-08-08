@@ -9,13 +9,13 @@ Binaries list:
 |     Binary Name       | Release Version |
 | --------------------  | -------------   |
 |     k9s               |     0.27.4      |
-|     Dive              |     0.10.0      |
-|     Trivy             |     0.18.3      |
-|     kubectx           |     0.9.4       |
-|     kubens            |     0.9.4       |
-|     kubectl           |     1.27.2      |
+|     Dive              |     0.11.0      |
+|     Trivy             |     0.44.0      |
+|     kubectx           |     0.9.5       |
+|     kubens            |     0.9.5       |
+|     kubectl           |     1.27.4      |
 |     Docker Engine     |     24.0.2      |
-|     Docker Compose    |     2.18.1      |
+|     Docker Compose    |     2.20.2      |
 
 # Tools List
 

@@ -5,6 +5,7 @@
 read -p "Enter architecture: " ARCHITECTURE
 read -p "Enter architecture for kubens+kubectx - (arm64, armhf, armv7, ppc64Ie, s390x, x86_64 ) : " ARCHITECTURE2
 read -p "Enter architecture for docker-compose - (aarch64, x86_64, arm6, arm7, 	ppc64Ie, risvc64, s390x ) : " ARCHITECTURE3
+read -p "Enter architecture for trivy - (32bit, 64b, ARM, ARM64, PPC64LE, s390x ) : " ARCHITECTURE4
 
 sudo apt-get update
 
@@ -19,7 +20,7 @@ K9S_VERSION=0.27.4; curl -sSLO https://github.com/derailed/k9s/releases/download
 DIVE_VERSION=0.11.0;  curl -sSLO https://github.com/wagoodman/dive/releases/download/v${DIVE_VERSION}/dive_${DIVE_VERSION}_linux_${ARCHITECTURE}.deb && sudo dpkg -i dive_${DIVE_VERSION}_linux_${ARCHITECTURE}.deb
 
 #Trivy
-TRIVY_VERSION=0.44.0; curl -sSLO https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_Linux-${ARCHITECTURE}.deb && sudo dpkg -i trivy_${TRIVY_VERSION}_Linux-${ARCHITECTURE}.deb
+TRIVY_VERSION=0.44.0; curl -sSLO https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_Linux-${ARCHITECTURE4}.deb && sudo dpkg -i trivy_${TRIVY_VERSION}_Linux-${ARCHITECTURE4}.deb
 
 #Docker Engine
 curl -fsSL https://get.docker.com -o get-docker.sh; sudo sh get-docker.sh; rm -rf get-docker.sh

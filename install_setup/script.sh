@@ -9,7 +9,7 @@ read -p "Enter architecture for trivy - (32bit, 64bit, ARM, ARM64, PPC64LE, s390
 
 sudo apt-get update
 
-sudo apt-get install -y wget curl bmon htop vim nmap
+sudo apt-get install -y wget curl net-tools whois netcat-traditional pciutils bmon htop
 
 #Common tools:
 

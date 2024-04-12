@@ -36,6 +36,7 @@ DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
 mkdir -p $DOCKER_CONFIG/cli-plugins
 DOCKER_COMPOSE_VERSION=2.26.1; curl -SL https://github.com/docker/compose/releases/download/v${DOCKER_COMPOSE_VERSION}/docker-compose-linux-${ARCHITECTURE2} -o $DOCKER_CONFIG/cli-plugins/docker-compose
 chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose
+docker compose version #verify
 
 #Docker Engine
 curl -fsSL https://get.docker.com -o get-docker.sh; sudo sh get-docker.sh; rm -rf get-docker.sh
@@ -45,5 +46,4 @@ curl -fsSL https://get.docker.com -o get-docker.sh; sudo sh get-docker.sh; rm -r
         newgrp docker
 
 rm -rf get-docker.sh
-
-docker compose version #verify
+docker version #verify

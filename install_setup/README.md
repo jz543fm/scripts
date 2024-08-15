@@ -1,6 +1,6 @@
 # Install Setup
 
-Creates installation setup for Mac OS or Debian/Ubuntu and for Debian/Ubuntu adds binaries by specific version
+Creates installation setup for MacOS or Debian/Ubuntu and for Debian/Ubuntu adds binaries by specific version
 
 Install Starship (Cross Platform Terminal) with [starship.sh](https://github.com/jz543fm/starship-conf) 
 

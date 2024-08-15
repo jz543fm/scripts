@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+uptime
+
 #Get OS
 uname -a
 

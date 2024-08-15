@@ -1,15 +1,12 @@
 #!/usr/bin/env bash
 
 #My personal setup
-
 read -p "Enter architecture: " ARCHITECTURE
 read -p "Enter architecture for kubens+kubectx - (arm64, armhf, armv7, ppc64Ie, s390x, x86_64 ) : " ARCHITECTURE2
 read -p "Enter architecture for docker-compose - (aarch64, x86_64, arm6, arm7, ppc64Ie, risvc64, s390x ) : " ARCHITECTURE3
 read -p "Enter architecture for trivy - (32bit, 64bit, ARM, ARM64, PPC64LE, s390x ) : " ARCHITECTURE4
 
 sudo apt-get update
-
-sudo apt-get install -y wget curl net-tools whois netcat-traditional pciutils bmon htop git vim
 
 #Common tools:
 

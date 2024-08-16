@@ -14,9 +14,12 @@ sudo add-apt-repository --yes --update ppa:ansible/ansible
 sudo apt install -y ansible
 
 #Starship
-git clone https://github.com/jz543fm/starship-conf.git
+cd ~; git clone https://github.com/jz543fm/starship-conf.git
 brew install starship
 cd starship-conf/; ./install_zsh.sh; cd ../; rm -rf starship-conf;
+
+#K8s-Backup
+cd ~; git clone https://github.com/jz543fm/k8s-backup; cd k8s-backup; mv add_k8s_config.sh /usr/local/bin
 
 echo -e 'ssh\n'
 cat ~/.ssh/

@@ -21,6 +21,9 @@ brew install k9s
 cd ~/; git clone https://github.com/jz543fm/starship-conf.git
 cd starship-conf/; ./install_bash.sh; cd ~/; rm -rf starship-conf;
 
+#K8s backup
+cd ~; git clone https://github.com/jz543fm/k8s-backup; cd k8s-backup; mv add_k8s_config.sh /usr/local/bin
+
 echo -e 'ssh\n'
 ls -ltr ~/.ssh/
 

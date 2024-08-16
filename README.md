@@ -1,5 +1,6 @@
-# scripts
-Scripts for simplifying specific tasks
+# Bash scripts
+
+Bash Scripts for simplifying specific tasks
 
 ## Repository structure
 
